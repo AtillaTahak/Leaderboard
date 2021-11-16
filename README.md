@@ -26,9 +26,11 @@
 
 **To get a copy of this repo into your local machine run the following command:**
 ```
-git clone https://github.com/AtillaTahak/Leaderboard.git
-cd Leaderboard
-in visual studio code you can click the go live button to view it live in the browser.
+-git clone https://github.com/AtillaTahak/Leaderboard.git
+-cd Leaderboard
+-npm install
+-npm run start 
+
 ```
 
 
