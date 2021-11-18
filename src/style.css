@@ -1,3 +1,7 @@
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 body {
   background-color: bisque;
 }
@@ -12,4 +16,10 @@ h4 {
 
 .input-group-text {
   background-color: #d1e7dd;
+}
+
+.container {
+  border: 2px solid;
+  margin: 10% auto;
+  padding: 5%;
 }

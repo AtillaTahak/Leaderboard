@@ -20,9 +20,18 @@ const postItem = async () => {
   })).json();
 };
 
+const reciveData = async () => {
+  const requestUrl = (await fetch(apiUrl).then((response) => response.json()));
+  const reachedData = requestUrl.result;
+  return reachedData;
+};
+submitBtn.addEventListener('click', () => {
+  postItem();
+});
+
 const createElemen = (elements) => {
   document.querySelector('tbody').innerHTML = '';
-  elements.foreach((x) => {
+  elements.forEach((x) => {
     const elementTr = document.createElement('tr');
     const elementThName = document.createElement('th');
     const elementThScore = document.createElement('th');
@@ -33,15 +42,6 @@ const createElemen = (elements) => {
     document.querySelector('tbody').appendChild(elementTr);
   });
 };
-const reciveData = async () => {
-  const requestUrl = (await fetch(apiUrl).then((response) => response.json()));
-  const reachedData = requestUrl.result;
-  return reachedData;
-};
-submitBtn.addEventListener('click', () => {
-  postItem();
-});
-
 refreshBtn.addEventListener('click', () => {
   reciveData().then((result) => createElemen(result));
 });

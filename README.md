@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link]
+[Live Demo Link](https://atillatahak.github.io/Leaderboard/dist/)
 
 ## Presentation
 
